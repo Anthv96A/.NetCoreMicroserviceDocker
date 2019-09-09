@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  categoryapi:
+    image: ${DOCKER_REGISTRY-}categoryapi
+    build:
+      context: .
+      dockerfile: Category.Api/Dockerfile
